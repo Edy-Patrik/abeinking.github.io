@@ -1,3 +1,13 @@
+:root {
+
+    --dark-orange: #FFB100;
+    --orange: #FBC252;
+    --white: #F0ECCF;
+    --green: #A3BB98;
+
+}
+
+
 /*Nav Menu Styling*/
 .nav-menu {
   display: flex;
@@ -22,7 +32,7 @@
 
 /*Hero Section Styling*/
 
-.hs {color: #ffffff;}
+.hs {color: black;}
 
 .hs-image {
   width: 100%;
@@ -31,9 +41,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url("./images/stars.jpg");
+  background-image: url("./images/hsbg.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size:cover;
+  background-position: center center;
 }
 
 /*Images Styling*/
@@ -54,7 +65,7 @@ body {
 }
 
 header {
-  background-color: #ffffff;
+  background-color: var(--white);
   height: 50px;
   display: flex;
   flex-direction: row;
@@ -65,6 +76,6 @@ header {
 hr {
   margin: 0;
   height: 2.5px;
-  background-color: black;
+  background-color: var(--green);
   border: none;
 }
