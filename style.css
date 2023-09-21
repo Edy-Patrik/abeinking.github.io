@@ -1,5 +1,19 @@
 .nav-menu {display: flex; flex-direction: row; align-items: center; justify-content: center;}
 
-.nav-menu a {margin-left: 25px; margin-right: 25px; text-decoration: none; font-size: large;}
+.nav-menu a {margin-left: 25px; margin-right: 25px; text-decoration: none; font-size: 18px; color: black; font-weight: bold;}
 
-.nav-menu a:hover {text-decoration: underline;color: rgba(255, 3, 3,0.5);}
+.nav-menu a:hover {text-decoration: underline;color: gray;}
+
+.hs-image {width:100%; height: 600px; display: flex; flex-direction: column; justify-content: center; align-items: center; background-image: url('./images/stars.jpg'); background-repeat: no-repeat; background-size: cover;}
+
+.hs-text {color: #FFFFFF; display: flex; flex-direction: column; justify-content: center; align-items: center;}
+
+.hs-text p {margin: 0;}
+
+hr {width:100%; margin:0; height: 2.5px; background-color: black;}
+
+body {margin: 0; font-family: Arial, Helvetica, sans-serif;}
+
+header {background-color: #FFFFFF; height: 50px;display: flex; flex-direction: row; justify-content: center; align-items: center;}
+
+#logoimg {max-width: 150px; max-height: 150px; object-fit: contain;}
