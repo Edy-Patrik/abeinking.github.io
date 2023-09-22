@@ -1,12 +1,9 @@
 :root {
-
-    --dark-orange: #FFB100;
-    --orange: #FBC252;
-    --white: #F0ECCF;
-    --green: #A3BB98;
-
+  --dark-orange: #ffb100;
+  --orange: #fbc252;
+  --white: #f0eccf;
+  --green: #a3bb98;
 }
-
 
 /*Nav Menu Styling*/
 .nav-menu {
@@ -32,7 +29,23 @@
 
 /*Hero Section Styling*/
 
-.hs {color: black;}
+.hs {
+  color: black;
+}
+
+#hs-button {
+  margin-top: 40px;
+  transition: all 0.3s ease;
+  width: 8rem;
+  height: 2rem;
+  border: none;
+  border-radius: 16px;
+  background-color: var(--orange);
+}
+#hs-button:hover {
+  border-radius: 10px;
+  background-color: var(--dark-orange);
+}
 
 .hs-image {
   width: 100%;
@@ -43,8 +56,84 @@
   align-items: center;
   background-image: url("./images/hsbg.png");
   background-repeat: no-repeat;
-  background-size:cover;
+  background-size: cover;
   background-position: center center;
+}
+
+/*Aboutme section Styling*/
+
+#aboutme-paragraph {
+  text-wrap: nowrap;
+  white-space: pre-line;
+  max-width: 50%;
+  text-align: center;
+}
+
+div.aboutme-flex-container {
+  margin: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+div.aboutme-img-flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.aboutme-flex-image {
+  max-width: 200px;
+  object-fit: contain;
+}
+
+div#aboutme {
+  background-color: var(--white);
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+h2.aboutme {
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 20px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/*Gallery section Styling*/
+
+div#gallery {
+
+  padding: 50px 0 50px 0;
+background-color: var(--orange);
+
+}
+
+div.gallery-flex-container {
+  margin: 50px;
+  display: flex;
+  flex-direction:row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.gallery-image {
+  margin: 5px;
+  border: solid 3px #a3bb98 ;
+  max-width: 200px;
+  object-fit: contain;
+}
+
+h2.gallery {
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 20px;
+  margin:0px;
+  text-align: center;
 }
 
 /*Images Styling*/
@@ -73,9 +162,19 @@ header {
   align-items: center;
 }
 
+button {
+  font-size: 13px;
+  font-weight: bold;
+}
+
 hr {
   margin: 0;
   height: 2.5px;
   background-color: var(--green);
   border: none;
+}
+
+hr.separator {
+  width: 50px;
+  margin: 10px auto;
 }

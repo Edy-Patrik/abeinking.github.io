@@ -6,23 +6,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
     <title>AbeInking</title>
+    <script defer src="./Scripts/script.js"></script>
   </head>
   <body>
     <header>
       <div class="header-container">
         <div class="nav-menu">
-          <a href="./index.html"> Acasa </a>
-          <a href="#despre"> Despre </a>
+          <a href="./index.html"> Home </a>
+          <a href="#aboutme"> About me </a>
+          <a href="#gallery"> Gallery </a>
           <a href="#contact"> Contact </a>
         </div>
       </div>
     </header>
-    <hr />
 
-    <div class="hs-image hs">
-      <img id="logoimg" src="./images/abeinking.svg" alt="abe inking logo">
+    <!--Hero Section-->
+
+    <hr>
+
+    <div class="hs-image hs" id="herosection">
+      <img id="logoimg" src="./images/My-Logo.png" alt="abe inking logo">
       <h2>Art by Edy</h2>
+      <a class="hs-a" href="#aboutme"><button id="hs-button">About me</button></a>
     </div>
+
+    <hr>
+
+    <!--About me Section-->
+
+    <div id="aboutme">
+
+      <h2 class="aboutme">About me</h2>
+      <hr class="separator">
+      <div class="aboutme-flex-container">
+       
+        <p id="aboutme-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+           Proin eu hendrerit lectus. Sed luctus purus augue, condimentum viverra ante pretium vel.
+            Maecenas ut erat nec turpis finibus tristique.
+             Etiam suscipit laoreet tortor, quis consectetur nisl mattis non.
+              Mauris suscipit eget ex sit amet pharetra. Aliquam erat volutpat.
+               Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
+                In bibendum sed dui sed volutpat. Morbi vel mattis mi. In hac habitasse platea dictumst.
+                 Phasellus vitae blandit nisi, a pretium justo. In laoreet ex ac enim maximus, nec condimentum dolor rhoncus.
+                  Mauris eget auctor lectus, quis tristique justo. Nunc non ullamcorper justo.</p>
+
+
+
+      </div>
+
+
+    </div>
+
+    <hr>
+
+    <!--Gallery Section-->
+
+    <div id="gallery">
+
+      <h2 class="gallery">Gallery</h2>
+      <hr class="separator">
+      <div class="gallery-flex-container">
+       
+      <img class="gallery-image" src="./images/gallery/A_bee_and_a_flower.jpg" alt="a gallery image">
+      <img class="gallery-image" src="./images/gallery/Cute_Bunny.jpg" alt="a gallery image">
+      <img class="gallery-image" src="./images/gallery/Horse.jpg" alt="a gallery image">
+      <img class="gallery-image" src="./images/gallery/Mauntein_landscape.jpg" alt="a gallery image">
+      <img class="gallery-image" src="./images/gallery/River_landscape_with_a_forest_Next_to_it.jpg" alt="a gallery image">
+      <img class="gallery-image" src="./images/gallery/Waterfall_landscape_with_some_rocks.jpg" alt="a gallery image">
+
+
+      </div>
+
+
+    </div>
+
 
     <footer></footer>
   </body>
