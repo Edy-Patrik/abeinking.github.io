@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="./style.css" />
     <title>AbeInking</title>
     <script defer src="./Scripts/script.js"></script>
+    <script src="https://kit.fontawesome.com/d25ceca996.js" crossorigin="anonymous"></script>
+    <script defer src="./Scripts/emailHandle.js"></script>
   </head>
   <body>
     <header>
@@ -15,7 +17,7 @@
           <a href="./index.html"> Home </a>
           <a href="#aboutme"> About me </a>
           <a href="#gallery"> Gallery </a>
-          <a href="#contact"> Contact </a>
+          <a href="#contact-me"> Contact </a>
         </div>
       </div>
     </header>
@@ -80,7 +82,80 @@
 
     </div>
 
+    <!--Contact me Area-->
 
-    <footer></footer>
+    <div id="contact-me">
+
+      <h2 class="contact-me">Contact Me</h2>
+      <hr class="separator">
+
+      <div class="form-holder">
+      <form id="contact-me-form">
+
+        <div class="form-flex-container">
+        <div class="label-input-div">
+        <label for="E-mail">E-Mail:</label>
+        <input required type="email" name="E-mail">
+      </div>
+      <div class="label-input-div">
+        <label for="subject">Subject:</label>
+        <input required type="text" name="subject">
+      </div>
+      <div class="label-input-div">
+        <label for="message">Message:</label>
+        <textarea id="contact-me-textarea" name="message"></textarea>
+      </div>
+      <button id="contact-me-submit" type="submit">Send!</button>
+
+      <p id="successmessage" class="vis-none">Message sent successfully! Thanks!</p>
+      
+      <p id="failmessage" class="vis-none">Sending the message has failed, please try again later!</p>
+
+    </div>
+
+
+
+      </form>
+    </div>
+
+    </div>
+
+    <hr>
+    <footer>
+
+      <div class="social-flex-container">
+
+        <div class="social-item">
+
+          <icon class="fa-regular fa-envelope fa-xl social-icon"></icon>
+          <a href="mailto:inking.abe@mail.com"><p class="social-text-title">inking.abe@mail.com</p></a>
+          <icon class="fa-regular fa-envelope fa-xl social-icon hidden"></icon>
+        </div>
+        <div class="social-item">
+
+          
+          <i class="fa-brands fa-pinterest fa-xl social-icon"></i>
+          <a href="http://www.pinterest.com/acibagicontutau"><p class="social-text-title">AbeInking</p></a>
+          <i class="fa-brands fa-pinterest fa-xl social-icon hidden"></i>
+
+        </div>
+        <div class="social-item">
+
+          
+          <i class="fa-brands fa-instagram fa-xl social-icon"></i>
+          <a href="http://www.instagram.com/@abeinkingofficial"><p class="social-text-title">AbeInkingOfficial</p></a>
+          <i class="fa-brands fa-instagram fa-xl social-icon hidden"></i>
+        </div>
+      </div>
+
+      <hr class="separator" id="footer-separator">
+     
+      <div class="copyright-text">
+
+        <p>AbeInking ©2023 All rights reserved </p>
+
+
+      </div>
+    </footer>
   </body>
 </html>
